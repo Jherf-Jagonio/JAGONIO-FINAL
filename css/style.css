@@ -1,0 +1,454 @@
+/* Base styles */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #011627;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 50;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+}
+
+.logo {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.button {
+    display: none;
+    font-size: 24px;
+    color: #011627;
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav li {
+    margin: 0 16px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+.nav a:hover {
+    color: #5a67d8;
+    text-decoration: underline;
+}
+
+.about-me-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    text-align: left;
+}
+
+.about-me {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    overflow: visible;
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.1);
+}
+
+.img1, .img2 {
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    width: 100%;
+    height: auto; 
+    max-height: 100%;
+    object-fit: contain; 
+    transition: transform 0.6s ease;
+}
+
+.img2 {
+    display: none;
+}
+
+.about-me:hover .img1, .about-me:hover .img2 {
+    transform: scale(1.1) translateY(-60px);
+    transition: transform 4s ease;
+}
+
+.about-text {
+    margin-left: 300px;
+    color: #011627;
+    max-width: 400px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-text h1 {
+    font-size: 48px; 
+}
+
+.typewriter {
+    font-size: 48px;
+    border-right: 2px solid #5a67d8;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+.about-text p {
+    font-size: 40px;
+    color: #011627; 
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 48px;
+    font-size: 40px;
+    color: white;
+    letter-spacing: 3px;
+}
+
+.for-width {
+    background-color: #011627;
+}
+
+.about-class {
+    padding: 80px 20px;
+}
+
+#about .about-inside {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#about .about-img {
+    flex: 1 1 280px; 
+    max-width: 320px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+#about .about-img img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#about .text {
+    flex: 2 1 400px; 
+    font-size: 30px;
+    color: white; 
+}
+
+#about .text p {
+    margin-bottom: 15px;
+    line-height: 1.6; 
+}
+
+.skill-class-h2 {
+    color: #011627;
+}
+
+#skills .skills-inside {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.skill {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    width: 160px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.skill:hover {
+    transform: translateY(-20px);
+}
+    
+.skill-icon {
+    font-size: 80px;
+    color: #2980b9;
+    margin-bottom: 30px;
+}
+
+.skill-name {
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.progress-bar {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 10px;
+}
+
+.progress-bar-class {
+    background: #011627;
+    height: 100%;
+    width: 0;
+    border-radius: 10px;
+    transition: width 1s ease;
+}
+
+.skill-html .progress-bar-class {
+    width: 30%;
+}
+
+.skill-css .progress-bar-class {
+    width: 20%;
+}
+
+.skill-javascript .progress-bar-class {
+    width: 10%;
+}
+
+.skill-java .progress-bar-class {
+    width: 40%;
+}
+
+.portfolio-section-width {
+    background-color: #011627;
+    padding: 20px 0;
+}
+
+.portfolio-h2 {
+    color: #ffffff;
+    text-align: center; 
+}
+
+#portfolio .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.portfolio-item {
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-10px); 
+}
+
+
+.portfolio-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    color: #b0b0b0;
+    height: 180px;
+}
+
+.portfolio-info {
+    padding: 16px;
+}
+
+.portfolio-info h3 {
+    font-size: 20px;
+    margin-bottom: 6px;
+    color: #2980b9;
+}
+
+.portfolio-info p {
+    color: #666;
+    font-size: 15px;
+}
+
+.contact-h2 {
+    color: #011627;
+}
+
+#contact .contact-inside {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact label {
+    margin: 10px 0 6px;
+    font-weight: 600;
+    color: #444;
+}
+
+#contact input, #contact textarea {
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 6px;
+    transition: border-color 0.3s ease;
+}
+
+#contact input:focus, #contact textarea:focus {
+    border-color: #3498db;
+}
+
+#contact textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#contact button {
+    margin-top: 20px;
+    background: #2980b9;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: opacity 0.15s; 
+}
+
+#contact button:hover {
+    opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+    .about-me-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-text {
+        margin-left: 300px;
+        margin-top: 20px;
+    }
+
+    .about-me {
+        width: 100%;
+        height: auto;
+    }
+
+    .about-text h1 {
+        font-size: 36px;
+    }
+
+    .about-text p {
+        font-size: 48px;
+    }
+
+    .skill {
+        width: 100%;
+    }
+
+    .portfolio-item {
+        width: 100%;
+    }
+
+    .portfolio-info h3 {
+        font-size: 18px;
+    }
+
+    .portfolio-info p {
+        font-size: 14px;
+    }
+
+    section h2 {
+        font-size: 32px;
+    }
+
+    #contact label {
+        font-size: 14px;
+    }
+
+    #contact input, #contact textarea {
+        font-size: 14px;
+    }
+
+    #contact button {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .about-me-section {
+        flex-direction: row;
+    }
+
+    .about-text {
+        margin-left: 300px;
+    }
+
+    .about-text h1 {
+        font-size: 42px;
+    }
+
+    .about-text p {
+        font-size: 48px;
+    }
+
+    .portfolio-item {
+        width: 280px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .about-me-section {
+        flex-direction: row;
+    }
+
+    .about-text {
+        margin-left: 300px;
+    }
+
+    .about-text h1 {
+        font-size: 48px;
+    }
+
+    .about-text p {
+        font-size: 48px;
+    }
+
+    .portfolio-item {
+        width: 280px;
+    }
+}
