@@ -270,7 +270,6 @@ section h2 {
     transform: translateY(-10px); 
 }
 
-
 .portfolio-img {
     display: flex;
     justify-content: center;
@@ -350,7 +349,7 @@ section h2 {
     opacity: 0.5;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     .about-me-section {
         flex-direction: column;
         align-items: center;
@@ -358,7 +357,7 @@ section h2 {
     }
 
     .about-text {
-        margin-left: 300px;
+        margin-left: 0;
         margin-top: 20px;
     }
 
@@ -368,15 +367,16 @@ section h2 {
     }
 
     .about-text h1 {
-        font-size: 36px;
+        font-size: 28px;
     }
 
     .about-text p {
-        font-size: 48px;
+        font-size: 20px;
     }
 
     .skill {
         width: 100%;
+        padding: 10px;
     }
 
     .portfolio-item {
@@ -384,19 +384,19 @@ section h2 {
     }
 
     .portfolio-info h3 {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .portfolio-info p {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     section h2 {
-        font-size: 32px;
+        font-size: 28px;
     }
 
     #contact label {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     #contact input, #contact textarea {
@@ -404,7 +404,40 @@ section h2 {
     }
 
     #contact button {
-        font-size: 16px;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .about-me-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-text {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .about-text h1 {
+        font-size: 36px;
+    }
+
+    .about-text p {
+        font-size: 18px;
+    }
+
+    .skill {
+        width: 45%;
+    }
+
+    .portfolio-item {
+        width: 45%;
+    }
+
+    section h2 {
+        font-size: 32px;
     }
 }
 
@@ -422,7 +455,7 @@ section h2 {
     }
 
     .about-text p {
-        font-size: 48px;
+        font-size: 24px;
     }
 
     .portfolio-item {
@@ -444,7 +477,7 @@ section h2 {
     }
 
     .about-text p {
-        font-size: 48px;
+        font-size: 24px;
     }
 
     .portfolio-item {
